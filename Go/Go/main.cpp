@@ -31,6 +31,8 @@ public:
     }
 };
 
+extern void classTest();
+
 int main(int argc, const char * argv[]) {
     // insert code here...
     std::cout << "Hello, World!\n";
@@ -85,6 +87,15 @@ int main(int argc, const char * argv[]) {
     if (wPtr.expired()) {
         cout << " wPtr expired" << endl;
     }
+    
+    classTest();
+    cout << endl;
+    cout << endl;
+    cout << endl;
+    cout << endl;
+    int a = 5;
+    int &b = a;
+    cout << "a = " << a << ", b = " << b << endl;
     return 0;
 }
 
